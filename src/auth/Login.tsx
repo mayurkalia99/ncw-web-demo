@@ -1,5 +1,6 @@
 import { useAppStore } from "../AppStore";
 import { Card, ICardAction } from "../components/ui/Card";
+import { LoginForm } from "../components/ui/LoginForm";
 import { ReactFCC } from "../types";
 
 export const Login: ReactFCC = ({ children }) => {
@@ -17,9 +18,10 @@ export const Login: ReactFCC = ({ children }) => {
 
   return (
     <div className="mt-16">
-      <Card title="Authentication" actions={[googleCardAction, appleCardAction]}>
+      {/* <Card title="Authentication" actions={[googleCardAction, appleCardAction]}>
         <p>You must first login to be able to access the demo application</p>
-      </Card>
+      </Card> */}
+      <LoginForm />
     </div>
   );
 };
